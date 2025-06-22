@@ -1,0 +1,10 @@
+Flask
+flask-cors
+deepface
+cloudinary
+python-dotenv
+Pillow
+opencv-python
+numpy
+mediapipe
+requests

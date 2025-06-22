@@ -1,0 +1,81 @@
+.admin-dashboard {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.admin-title {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.admin-forms {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.admin-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #6f42c1; /* Admin purple color */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.admin-button:hover {
+  background-color: #5e32b1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-button:active {
+  transform: translateY(1px);
+}
+
+.admin-button.login {
+  background-color: #4a6bdf; /* Different color for login */
+}
+
+.admin-button.login:hover {
+  background-color: #3a5bd9;
+}
+
+.admin-button.register {
+  background-color: #28a745; /* Different color for register */
+}
+
+.admin-button.register:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .admin-title {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,104 @@
+.notification-dropdown {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e0e0e0;
+  }
+  
+  .notification-dropdown h4 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #3498db;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .notification-dropdown h4::before {
+    content: "🔔";
+    font-size: 1.2rem;
+  }
+  
+  .notification-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 500px;
+    overflow-y: auto;
+  }
+  
+  .notification-dropdown li {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .notification-dropdown li:hover {
+    background: #eef2f5;
+    transform: translateX(5px);
+  }
+  
+  .notification-dropdown li::before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+    position: absolute;
+    left: 0.5rem;
+  }
+  
+  .notification-dropdown li:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* No notifications style */
+  .notification-dropdown li:only-child {
+    text-align: center;
+    color: #7f8c8d;
+    border-left: 4px solid #bdc3c7;
+    font-style: italic;
+  }
+  
+  /* Scrollbar styling */
+  .notification-dropdown ul::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .notification-dropdown ul::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .notification-dropdown ul::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 10px;
+  }
+  
+  /* Timestamp styling (if you add timestamps later) */
+  .notification-time {
+    display: block;
+    font-size: 0.75rem;
+    color: #7f8c8d;
+    margin-top: 0.25rem;
+  }
+  .preserve-line{
+    white-space: pre-line;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .notification-dropdown {
+      margin: 1rem;
+      padding: 1rem;
+    }
+  }

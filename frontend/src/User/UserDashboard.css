@@ -1,0 +1,81 @@
+.user-dashboard {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.user-title {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.user-forms {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.user-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #28a745; /* User green color */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.user-button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-button:active {
+  transform: translateY(1px);
+}
+
+.user-button.login {
+  background-color: #4a6bdf; /* Different color for login */
+}
+
+.user-button.login:hover {
+  background-color: #3a5bd9;
+}
+
+.user-button.register {
+  background-color: #17a2b8; /* Different color for register */
+}
+
+.user-button.register:hover {
+  background-color: #138496;
+}
+
+@media (max-width: 768px) {
+  .user-dashboard {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .user-title {
+    font-size: 1.8rem;
+  }
+}

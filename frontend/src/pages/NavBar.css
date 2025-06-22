@@ -1,0 +1,196 @@
+/* Modern Color Palette */
+:root {
+  --primary: #2c3e50;       /* Dark blue */
+  --secondary: #3498db;     /* Vibrant blue */
+  --accent: #e74c3c;        /* Red for important actions */
+  --light-bg: #f8f9fa;      /* Light background */
+  --text-dark: #2c3e50;     /* Dark text */
+  --text-light: #ecf0f1;    /* Light text */
+  --hover-bg: #2980b9;      /* Hover state */
+}
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  padding: 0.8rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Left Section */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-logo {
+  height: 50px; /* Fixed height for better proportion */
+  width: auto;  /* Maintain aspect ratio */
+  border-radius: 4px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--secondary);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Right Section */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Google Translate */
+.translate-container {
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+  background-color: rgba(236, 240, 241, 0.9);
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.translate-container:hover {
+  opacity: 1;
+}
+
+.logout-button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .nav-left {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .nav-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-right {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+.goog-te-combo {
+  background-color: var(--text-light) !important;
+  color: var(--primary) !important;
+  border: 1px solid #ddd !important;
+  border-radius: 4px !important;
+  padding: 0.3rem 0.5rem !important;
+  font-size: 0.9rem !important;
+  min-width: 120px !important;
+  cursor: pointer;
+}
+
+/* Hide Google Translate branding */
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  color: transparent !important;
+  font-size: 0 !important; 
+}
+
+.goog-te-combo > option {
+  background: white !important;
+  color: var(--primary) !important;
+}
+
+/* Hover States */
+.goog-te-combo:hover {
+  border-color: var(--secondary) !important;
+  box-shadow: 0 0 0 1px var(--secondary) !important;
+}
+
+/* Dropdown Menu */
+.goog-te-menu {
+  background: white !important;
+  border-radius: 4px !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+}
+
+.goog-te-menu-value > span {
+  color: var(--primary) !important;
+}
+
+/* Hide Google Branding */
+.goog-logo-link, .goog-te-banner-frame {
+  display: none !important;
+}
+
+/* Language Options */
+.goog-te-menu2 {
+  max-height: 300px !important;
+  overflow-y: auto !important;
+}
+
+.goog-te-menu2-item div {
+  padding: 8px 12px !important;
+}
+
+.goog-te-menu2-item:hover {
+  background-color: var(--light-bg) !important;
+}

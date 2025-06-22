@@ -1,0 +1,80 @@
+.manage-election-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.manage-election-title {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.manage-election-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.election-button {
+  padding: 0.8rem 1.5rem;
+  width: 250px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.election-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.election-button:active {
+  transform: translateY(1px);
+}
+
+.create-election {
+  background-color: #6f42c1; /* Purple for admin actions */
+}
+
+.create-election:hover {
+  background-color: #5e32b1;
+}
+
+.view-elections {
+  background-color: #4a6bdf; /* Blue for view actions */
+}
+
+.view-elections:hover {
+  background-color: #3a5bd9;
+}
+
+.approvals-button {
+  background-color: #28a745; /* Green for approval actions */
+}
+
+.approvals-button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .manage-election-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .election-button {
+    width: 100%;
+  }
+}

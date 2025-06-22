@@ -1,0 +1,173 @@
+.voting-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.voting-title {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.voting-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.candidates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.candidate-option {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.candidate-option:hover {
+  background-color: #f1f3f5;
+  transform: translateY(-2px);
+}
+
+.candidate-option input[type="radio"] {
+  margin-right: 1rem;
+  accent-color: #4a6bdf;
+}
+
+.candidate-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+
+.webcam-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.webcam-select {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: white;
+}
+
+.webcam-button {
+  padding: 0.6rem 1rem;
+  background-color: #4a6bdf;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.webcam-button:hover {
+  background-color: #3a5bd9;
+}
+
+.video-container {
+  position: relative;
+  width: 320px;
+  height: 240px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.captured-image {
+  width: 320px;
+  height: 240px;
+  border: 2px solid #4a6bdf;
+  border-radius: 6px;
+  margin: 1rem auto;
+  display: block;
+}
+
+.vote-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1.5rem;
+}
+
+.vote-button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vote-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.message {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.message.info {
+  background-color: #e2e3e5;
+  color: #383d41;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background-color: #dee2e6;
+  margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .voting-container {
+    padding: 1.5rem;
+  }
+  
+  .video-container,
+  .captured-image {
+    width: 100%;
+    height: auto;
+  }
+}
+

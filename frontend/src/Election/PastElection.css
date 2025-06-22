@@ -1,0 +1,124 @@
+.past-election-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.past-election-title {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.election-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+.election-table th {
+  background-color: #6f42c1;
+  color: white;
+  padding: 1rem;
+  text-align: left;
+}
+
+.election-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.election-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.election-table tr:hover {
+  background-color: #f1f3f5;
+}
+
+.candidate-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.candidate-list li {
+  padding: 0.3rem 0;
+}
+
+.action-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.start-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.start-button:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.start-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.end-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.end-button:hover:not(:disabled) {
+  background-color: #c82333;
+}
+
+.end-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.status-indicator {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+
+.status-ongoing {
+  background-color: #28a745;
+}
+
+.status-ended {
+  background-color: #6c757d;
+}
+
+.winner-cell {
+  font-weight: 600;
+  color: #28a745;
+}
+
+@media (max-width: 768px) {
+  .past-election-container {
+    padding: 1rem;
+    overflow-x: auto;
+  }
+  
+  .election-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

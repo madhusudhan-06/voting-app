@@ -1,0 +1,36 @@
+/* Makes the container at least full viewport height */
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Allows the content to grow and push footer down */
+.content-wrapper {
+  flex: 1;
+  /* Add your preferred background color here */
+  /* background-color: #f5f7fa;  */
+  background-color: #f0f4f8;
+  background-image:
+    radial-gradient(at 20% 30%, rgba(52, 152, 219, 0.1) 0%, transparent 30%),
+    radial-gradient(at 80% 80%, rgba(231, 76, 60, 0.1) 0%, transparent 30%);
+  transition: all 0.3s ease;
+}
+
+/* Footer will automatically stick to bottom */
+footer {
+  margin-top: auto;
+}
+
+.content-wrapper.page-transition {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
