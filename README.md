@@ -114,6 +114,7 @@ Before setting up the project, ensure you have the following installed:
      ```bash
      cd ../python
      pip install -r requirements.txt
+     npm install
      ```
 
 4. **Set Up MongoDB**
@@ -139,7 +140,7 @@ Before setting up the project, ensure you have the following installed:
      ```bash
      npx hardhat compile
      ```
-   - This generates the contract artifacts in the `artifacts` folder, which is ignored by `.gitignore`.
+   - This generates the contract artifacts in the `artifacts` and `cache` folder, which is ignored by `.gitignore`.
    - hardhat.config.js file pre-configured with the Fuji network details.
 
 
@@ -172,6 +173,7 @@ Before setting up the project, ensure you have the following installed:
      ```bash
      cd ../frontend
      ```
+   - Inside the src folder, create an artifacts directory and copy the Voting.json file from hardhat/artifacts/contracts/Voting.sol into it.
    - Start the frontend development server:
      ```bash
      npm start
